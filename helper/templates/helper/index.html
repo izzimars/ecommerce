@@ -1,0 +1,138 @@
+{% extends 'helper/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+
+{% block banner-slider %}
+
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'helper/images/banner/b1.jpg' %}" class="d-block w-100" alt="banner-image">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'helper/images/banner/b2.jpg' %}" class="d-block w-100" alt="banner-image">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'helper/images/banner/b3.jpg' %}" class="d-block w-100" alt="banner-image">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'helper/images/banner/b4.jpg' %}" class="d-block w-100" alt="banner-image">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+{% endblock %}
+{% block information %}
+<div class="container">
+    <div class="row bg-success text-center p-5 mborder-bottom shadow">
+        <h1>Products</h1>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto assumenda cum quod velit,
+        quasi, nobis vitae qui sed autem corrupti ab! Quidem cumque deleniti debitis excepturi porro
+        facere dolorum repellat.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto assumenda cum quod velit,
+        quasi, nobis vitae qui sed autem corrupti ab! Quidem cumque deleniti debitis excepturi porro
+        facere dolorum repellat.
+    </div>
+</div>
+{% endblock %}
+{% block main-content %}
+<div class="container">
+    <h2 class="text-center">Diary Products</h2>
+
+    <br><br>
+    <div class="row container">
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="ls" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s;
+    animation-name: none;">
+            <div class="goodnesssec buttermilk smbg">
+                <a href="{% url 'category' 'GH' %}">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'helper/images/buffalo-ghee.png' %}" alt=""
+                            class="img-responsive center-block">
+                        <p class="mlkppro">Ghee</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="ls" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s;
+                    animation-name: none;">
+            <div class="goodnesssec buttermilk curdbgpro">
+                <a href="{% url 'category' 'CR' %}">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'helper/images/curd-total.png' %}" alt=""
+                            class="img-responsive center-block">
+                        <p class="mlkppro">Curd</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="ls" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s;
+                                    animation-name: none;">
+            <div class="goodnesssec buttermilk buttermilk">
+                <a href="{% url 'category' 'IC' %}">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'helper/images/kulfi.png' %}" alt="" class="img-responsive center-block">
+                        <p class="mlkppro">Ice-Creams</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <br><br>
+    <div class="row container">
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="ls" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s;
+            animation-name: none;">
+            <div class="goodnesssec buttermilk smbg">
+                <a href="{% url 'category' 'MS' %}">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'helper/images/milk-shake-chocolate.png' %}" alt=""
+                            class="img-responsive center-block">
+                        <p class="mlkppro">MilkShake</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="ls" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s;
+                            animation-name: none;">
+            <div class="goodnesssec buttermilk curdbgpro">
+                <a href="{% url 'category' 'ML' %}">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'helper/images/cow-milk.png' %}" alt="" class="img-responsive center-block">
+                        <p class="mlkppro">Milk</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="ls" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s;
+                                            animation-name: none;">
+            <div class="goodnesssec buttermilk buttermilk">
+                <a href="{% url 'category' 'IC' %}">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'helper/images/icbars.png' %}" alt="" class="img-responsive center-block">
+                        <p class="mlkppro">Ice-Creams</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<br><br>
+{% endblock %}

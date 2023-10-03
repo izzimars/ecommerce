@@ -1,0 +1,67 @@
+{% extends 'helper/base.html' %}
+{% load static %}
+{% block title %}About{% endblock %}
+
+{% block banner-slider %}
+
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'helper/images/banner/b1.jpg' %}" class="d-block w-100" alt="banner-image">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'helper/images/banner/b2.jpg' %}" class="d-block w-100" alt="banner-image">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'helper/images/banner/b3.jpg' %}" class="d-block w-100" alt="banner-image">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'helper/images/banner/b4.jpg' %}" class="d-block w-100" alt="banner-image">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+{% endblock %}
+
+{% block main-content %}
+<div class="container mt-3">
+    <br>
+    <h2 class="text-center">About us</h2>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit provident, incidunt quaerat quasi, eaque
+            nobis temporibus itaque aut ea
+            perferendis, excepturi repellendus illo dignissimos! Laudantium voluptatum labore nihil et suscipit?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, vel aut quasi voluptas consequatur,
+            numquam quaerat
+            maiores inventore laborum corrupti maxime minus voluptatem qui quae animi rem iste suscipit nulla?
+        </p>
+    </div>
+
+    <br>
+    <h2 class="text-center">Mission</h2>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit provident, incidunt quaerat quasi, eaque
+            nobis temporibus itaque aut ea
+            perferendis, excepturi repellendus illo dignissimos! Laudantium voluptatum labore nihil et suscipit?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, vel aut quasi voluptas consequatur,
+            numquam quaerat
+            maiores inventore laborum corrupti maxime minus voluptatem qui quae animi rem iste suscipit nulla?
+        </p>
+    </div>
+</div>
+{% endblock %}
